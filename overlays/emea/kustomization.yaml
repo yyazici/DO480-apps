@@ -1,5 +1,8 @@
 kind: Kustomization
 
+resources:
+- route.yaml
+
 bases:
 - ../../base
 
