@@ -1,11 +1,14 @@
 kind: Kustomization
 
+resources:
+- route.yaml 
+
 bases:
 - ../../base
 
 nameSuffix: -apac
 
-image:
+images:
   - name: mysql
-    new-name: registry.redhat.io/rhel8/mysql-80
-    new-tag: 1-152
+    newname: registry.redhat.io/rhel8/mysql-80
+    newtag: 1-152
